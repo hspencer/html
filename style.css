@@ -43,15 +43,15 @@ img{
 	content: " hola";
 }
 
-.block:nth-child(2){
+.block:nth-child(3){
 	left: 0;
 	content: "Hola";
 }
-.block:nth-child(3){
+.block:nth-child(4){
 	left: 250;
 	background-color: red;
 }
-.block:nth-child(4){
+.block:nth-child(5){
 	left: 500;
 	background-color: blue;
 }
