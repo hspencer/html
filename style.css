@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:100');
+@import url('https://fonts.googleapis.com/css?family=Lato:200');
 
 
 body {
@@ -29,9 +29,15 @@ img{
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	border: 1px solid black;
-	background-color: fuchsia;
+	border-radius: 50%;
+	mix-blend-mode: screen;
+	transition: all 1s ease;
+	text-align: center;
+}
 
+.block:hover{
+	width: 250px;
+	height: 250px;
 }
 
 .block > span{
@@ -39,19 +45,17 @@ img{
 	margin: 1em;
 }
 
-.block>span:after{
-	content: " hola";
-}
-
 .block:nth-child(3){
 	left: 0;
-	content: "Hola";
+	background-color: #FF0000;
+	
 }
 .block:nth-child(4){
-	left: 250;
-	background-color: red;
+	left: 30;
+	bottom: -300;
+	background-color: #00FF00;
 }
 .block:nth-child(5){
-	left: 500;
-	background-color: blue;
+	left: 60;
+	background-color: #0000FF;
 }
