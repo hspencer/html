@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+
+
+body {
+	font-family: Lato, sans-serif;
+	font-size: 32px;
+}
+
+.container{
+	width: 80%;
+	margin: 1em auto;
+	position: relative;
+}
+
+
+p{
+	// background-color: #E5E2C2;
+	/* padding: 1em;
+	text-align: justify; */
+}
+
+img{
+	float: right; 
+	margin:  1em 0 1em 1em;
+}
+
+
+.block{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	background-color: fuchsia;
+
+}
+
+.block > span{
+	display: block;
+	margin: 1em;
+}
+
+.block>span:after{
+	content: " hola";
+}
+
+.block:nth-child(2){
+	left: 0;
+	content: "Hola";
+}
+.block:nth-child(3){
+	left: 250;
+	background-color: red;
+}
+.block:nth-child(4){
+	left: 500;
+	background-color: blue;
+}
