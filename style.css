@@ -13,11 +13,12 @@ body {
 }
 
 .container:before{
-	position: absolute;
-	top: -1.5em;
-	content: "Mobile First";
+	display: block;
+	text-align: center;
 	font-weight: bolder;
-	font-size: .6em;
+	font-size: .5em;
+	margin: 0 0 1em 0;
+	content: "Mobile First";
 	color: fuchsia;
 }
 
@@ -31,8 +32,6 @@ p{
 	line-height: 1.2em;
 	font-size: .9em;
 }
-
-
 
 .block{
 	position: absolute;
@@ -120,5 +119,13 @@ p{
 		height: auto;
 		margin: 1em 0 1em 1em;
 	}
+
+	p:first-letter{
+	color: red;
+    font-size: 2.7em;
+    font-weight: bolder;
+    float: left;
+    margin: 0.25em .1em 0 .1em;
+}
 
 }
