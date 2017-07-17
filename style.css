@@ -1,28 +1,37 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:200');
-
+/* @import url('https://fonts.googleapis.com/css?family=Lato:200'); */
+@import 'responsive.css';
 
 body {
-	font-family: Lato, sans-serif;
-	font-size: 32px;
+	font-family: sans-serif;
+	font-size: 22px;
 }
 
 .container{
 	width: 80%;
-	margin: 1em auto;
+	margin: 2em auto;
 	position: relative;
 }
 
-
-p{
-	// background-color: #E5E2C2;
-	/* padding: 1em;
-	text-align: justify; */
+.container:before{
+	position: absolute;
+	top: -1.5em;
+	content: "Mobile First";
+	font-weight: bolder;
+	font-size: .6em;
+	color: fuchsia;
 }
 
 img{
-	float: right; 
-	margin:  1em 0 1em 1em;
+	width: 100%;
+	height: auto;
+	margin:  1em 0;
 }
+
+p{
+	line-height: 1.2em;
+	font-size: .9em;
+}
+
 
 
 .block{
@@ -58,4 +67,58 @@ img{
 .block:nth-child(5){
 	left: 60;
 	background-color: #0000FF;
+}
+
+
+/*   Responsive   */ 
+
+
+
+@media (min-device-width: 321px) and (max-device-width: 768px){
+	.container:before{
+		content: "Entre 321 y 768 pixeles";
+		color: green;
+	}
+
+	p{
+		max-width: 320px;
+		margin: 0 auto;
+
+	}
+
+}
+
+@media (min-device-width: 769px) and (max-device-width: 1024px){
+	.container:before{
+		content: "Entre 769 y 1024 pixeles";
+		color: blue;
+		
+	}
+
+	p{
+		display: inline-block;
+		width: 320px;
+		margin-right: 2em;
+		vertical-align: top;
+	}
+
+	p:last-child{
+		margin-right: 0;
+	}
+
+}
+
+@media (min-device-width: 1025px){
+	.container:before{
+		content: "Más de 1025 pixeles";
+		color: pink;
+	}
+
+	p > img{
+		float: right;
+		width: auto;
+		height: auto;
+		margin: 1em 0 1em 1em;
+	}
+
 }
