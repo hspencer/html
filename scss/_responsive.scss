@@ -3,7 +3,7 @@
 
 @media (min-device-width: $bp-tablet-min) and (max-device-width: $bp-tablet-max){
 	.container:before{
-		content: "Entre 321 y 768 pixeles";
+		content: "Entre "+$bp-tablet-min+" y 768 pixeles";
 		color: green;
 	}
 
@@ -17,7 +17,7 @@
 
 @media (min-device-width: $bp-tablet-max + 1) and (max-device-width: $bp-desktop-min - 1){
 	.container:before{
-		content: "Entre 769 y 1024 pixeles";
+		content: "Entre "+$bp-tablet-max +1+" y " +$bp-desktop-min -1+ " pixeles";
 		color: blue;
 		
 	}
@@ -53,14 +53,13 @@
 		width: 420px;
 		margin-right: 1em;
 		vertical-align: top;
+		
+		&:first-letter{
+			color: red;
+			font-size: 2.7em;
+			font-weight: bolder;
+			float: left;
+			margin: 0.25em .1em 0 .1em;
+		}
 	}
-
-	p:first-letter{
-	color: red;
-    font-size: 2.7em;
-    font-weight: bolder;
-    float: left;
-    margin: 0.25em .1em 0 .1em;
-}
-
 }

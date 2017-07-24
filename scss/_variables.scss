@@ -12,6 +12,8 @@ $color-fg:		#180020;
 $color-link:	#2E90FC;
 
 // Break Points
-$bp-tablet-min:	321px;
-$bp-tablet-max: 768px;
-$bp-desktop-min:	1025px;
+$bp-mobile-max:		320px;
+$bp-tablet-min:		$bp-mobile-max + 1;
+$bp-tablet-max: 	768px;
+$bp-desktop-min:	$bp-tablet-max + 1;
+$bp-desktop-max:	1280px;

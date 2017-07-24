@@ -34,3 +34,12 @@ Para obtener ayuda:
 	sass --help 
 	
 y obtendrás toda la documentación. 
+
+### Para este repositorio
+puede vigilar y comprimir los cambios en el archivo raiz:
+
+	sass --watch scss/style.scss:css/style.css --style compressed
+	
+o puede vigilar la carpeta completa:
+
+	sass --watch scss:css
