@@ -1,0 +1,81 @@
+// Base
+
+
+body {
+	font-family: Lato, sans-serif;
+	font-size: 18px;
+}
+
+.container{
+	width: 80%;
+	margin: 2em auto;
+	text-align: justify;
+	position: relative;
+}
+
+.container:before{
+	display: block;
+	text-align: center;
+	font-weight: bolder;
+	font-size: .5em;
+	margin: 0 0 1em 0;
+	content: "Mobile First";
+	color: fuchsia;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	margin:  1em 0;
+	clear: left;
+}
+
+p{
+	line-height: 1.2em;
+	font-size: .9em;
+	hyphens: auto;
+}
+
+.wrap{
+	max-width: 320px;
+	margin: 1em auto;
+	position: relative;
+	background-color: gray;
+}
+
+.block{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	mix-blend-mode: screen;
+	transition: all .31s ease;
+	text-align: center;
+}
+
+.block:hover{
+	width: 150px;
+	height: 150px;
+}
+
+.block > span{
+	display: block;
+	margin: 1em;
+}
+
+.block:nth-child(1){
+	left: 0;
+	background-color: #FF0000;
+	
+}
+.block:nth-child(2){
+	left: 30;
+	bottom: -156;
+	background-color: #00FF00;
+}
+.block:nth-child(3){
+	left: 60;
+	background-color: #0000FF;
+}
+
+
