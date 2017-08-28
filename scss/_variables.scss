@@ -2,9 +2,9 @@
 
 
 // Font
-@import url('https://fonts.googleapis.com/css?family=Lato:200');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 $font-size:				16px;
-$font-family-base:		Lato, sans-serif;
+$font-family-base:		Raleway, sans-serif;
 
 // Colors
 $color-bg:		#F7F7F7;
@@ -17,3 +17,7 @@ $bp-tablet-min:		$bp-mobile-max + 1;
 $bp-tablet-max: 	768px;
 $bp-desktop-min:	$bp-tablet-max + 1;
 $bp-desktop-max:	1280px;
+
+// spacers
+
+$sp: 				20px;

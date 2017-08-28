@@ -2,10 +2,7 @@
 
 
 @media (min-device-width: $bp-tablet-min) and (max-device-width: $bp-tablet-max){
-	.container:before{
-		content: "Entre "+$bp-tablet-min+" y 768 pixeles";
-		color: green;
-	}
+
 
 	p{
 		max-width: 320px;
@@ -16,11 +13,6 @@
 }
 
 @media (min-device-width: $bp-tablet-max + 1) and (max-device-width: $bp-desktop-min - 1){
-	.container:before{
-		content: "Entre "+$bp-tablet-max +1+" y " +$bp-desktop-min -1+ " pixeles";
-		color: blue;
-		
-	}
 
 	p{
 		display: inline-block;
@@ -36,10 +28,6 @@
 }
 
 @media (min-device-width: $bp-desktop-min){
-	.container:before{
-		content: "Más de 1025 pixeles";
-		color: pink;
-	}
 
 	p > img{
 		float: right;
