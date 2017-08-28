@@ -2,52 +2,20 @@
 
 
 @media (min-device-width: $bp-tablet-min) and (max-device-width: $bp-tablet-max){
-
-
-	p{
-		max-width: 320px;
-		margin: 0 auto;
-
+	a.thumb{
+		height: 200px !important;
 	}
-
 }
 
+
 @media (min-device-width: $bp-tablet-max + 1) and (max-device-width: $bp-desktop-min - 1){
-
-	p{
-		display: inline-block;
-		width: 320px;
-		margin-right: 1em;
-		vertical-align: top;
+	a.thumb{
+		height: 250px !important;
 	}
-
-	p:last-child{
-		margin-right: 0;
-	}
-
 }
 
 @media (min-device-width: $bp-desktop-min){
-
-	p > img{
-		float: right;
-		width: auto;
-		height: auto;
-		margin: 1em 0 1em 1em;
-	}
-
-	p{
-		display: inline-block;
-		width: 420px;
-		margin-right: 1em;
-		vertical-align: top;
-		
-		&:first-letter{
-			color: red;
-			font-size: 2.7em;
-			font-weight: bolder;
-			float: left;
-			margin: 0.25em .1em 0 .1em;
-		}
+	a.thumb{
+		height: 300px !important;
 	}
 }

@@ -4,11 +4,16 @@
 body {
 	font-family: $font-family-base;
 	font-size: $font-size;
+	margin: 0;
 }
 
 .container{
 	padding: $sp;
 	position: relative;
+	
+	h1{
+		margin: 0 $sp;
+	}
 }
 
 a{
@@ -28,12 +33,13 @@ a{
 		display: flex-item;
 		position: relative;
 		width: 50%;
-		height: 90px;
+		height: 150px;
 		overflow: hidden;
 		text-align: center;
 		margin: $sp;
+		
 		img{
-			height: auto;
+			
 		}
 
 		.overlay{
