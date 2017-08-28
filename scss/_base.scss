@@ -7,7 +7,6 @@ body {
 }
 
 .container{
-	margin: $sp auto;
 	padding: $sp;
 	position: relative;
 }
@@ -29,10 +28,10 @@ a{
 		display: flex-item;
 		position: relative;
 		width: 50%;
-		min-height: 100px;
+		height: 90px;
 		overflow: hidden;
 		text-align: center;
-
+		margin: $sp;
 		img{
 			height: auto;
 		}
